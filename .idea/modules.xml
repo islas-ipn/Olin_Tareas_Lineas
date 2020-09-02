@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Olin_Tareas_Lineas.iml" filepath="$PROJECT_DIR$/.idea/modules/Olin_Tareas_Lineas.iml" group="Olin_Tareas_Lineas" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Olin_Tareas_Lineas/app" />
+    </modules>
+  </component>
+</project>
