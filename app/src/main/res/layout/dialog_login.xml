@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/margin_large"
+    android:background="@drawable/background_card"
+    android:minHeight="50dp"
+    android:paddingBottom="@dimen/padding_medium"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <mx.com.pendulum.utilities.views.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/access_control"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/text_large"
+        app:typeFace="@string/font_bold" />
+
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <FrameLayout
+                style="@style/DynamicFormQuestionContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.9">
+
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvResponsableQuestion"
+                    style="@style/DynamicFormQuestion"
+                    android:text="Usuario: "
+                    app:typeFace="@string/font_bold"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                style="@style/DynamicFormAnswerContainerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.1"
+                android:minHeight="25dp">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/username"
+                    style="@style/DynamicFormAnswer"
+                    android:layout_centerInParent="true"
+                    android:completionThreshold="1"
+                    android:textColor="@color/primary_text"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <FrameLayout
+                style="@style/DynamicFormQuestionContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.9">
+
+                <FrameLayout
+
+                    style="@style/DynamicFormError"
+                    android:visibility="gone" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+
+                    style="@style/DynamicFormQuestion"
+                    android:text="Contraseña:"
+                    app:typeFace="@string/font_bold"
+                    tools:ignore="HardcodedText" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                style="@style/DynamicFormAnswerContainerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.1"
+                android:minHeight="25dp">
+
+                <mx.com.pendulum.utilities.views.CustomEditText
+                    android:id="@+id/password"
+                    style="@style/DynamicFormAnswer"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/transparent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/primary_text"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <mx.com.pendulum.utilities.views.CustomCheckBox
+        android:id="@+id/checkBoxShowPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/llContainer"
+        android:text="@string/passwordshow"
+        android:textColor="@color/color_900"
+        android:textSize="12sp"
+        app:buttonTint="@color/accent"
+        app:typeFace="@string/font" />
+
+
+    <mx.com.pendulum.utilities.views.CustomButton
+        android:id="@+id/buttonUnlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBoxShowPass"
+        android:background="@drawable/transparent"
+        android:padding="20dp"
+        android:text="@string/ok"
+        android:textColor="@color/accent"
+        android:textSize="15sp"
+        app:typeFace="@string/font_bold" />
+</RelativeLayout>

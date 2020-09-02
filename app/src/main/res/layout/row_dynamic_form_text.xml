@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    style="@style/DynamicFormRow">
+
+
+    <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+        <FrameLayout
+            android:id="@+id/flError"
+            style="@style/DynamicFormError" />
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvQuestion"
+            style="@style/DynamicFormQuestion" />
+    </FrameLayout>
+
+    <RelativeLayout style="@style/DynamicFormAnswerContainerText">
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_cancel"
+            android:layout_alignBottom="@+id/etAnswer"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <mx.com.pendulum.utilities.views.CustomEditText
+            android:id="@+id/etAnswer"
+            style="@style/DynamicFormAnswer"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivDelete" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+

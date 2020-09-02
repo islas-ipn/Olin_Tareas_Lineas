@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_small" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp" >
+
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_small"
+            android:contentDescription="@string/empty"
+            android:maxHeight="16dp"
+            android:maxWidth="16dp"
+            android:minHeight="12dp"
+            android:minWidth="12dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/syncTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/Black"
+            android:text="@string/synchronizing_data" />
+
+        <TextView
+            android:id="@+id/resourceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            tools:ignore="SelectableText" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@drawable/progress_horizontal_olin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:textColor="@color/Black"
+        android:max="0"
+        android:maxHeight="16dp"
+        android:maxWidth="16dp"
+        android:minHeight="14dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_horizontal_olin" />
+
+</LinearLayout>

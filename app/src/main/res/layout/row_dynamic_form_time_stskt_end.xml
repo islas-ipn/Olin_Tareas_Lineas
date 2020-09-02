@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    style="@style/DynamicFormRow">
+
+    <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+        <FrameLayout
+            android:id="@+id/flError"
+            style="@style/DynamicFormError" />
+
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvQuestion"
+
+            style="@style/DynamicFormQuestion" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlAnswerStart"
+        style="@style/DynamicFormAnswerContainer">
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_cancel" />
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvAnswer"
+            style="@style/DynamicFormAnswer"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivDelete" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="3dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlAnswerEnd"
+        style="@style/DynamicFormAnswerContainer">
+
+        <ImageView
+            android:id="@+id/ivDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_cancel" />
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvAnswer2"
+            style="@style/DynamicFormAnswer"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ivDelete2" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+

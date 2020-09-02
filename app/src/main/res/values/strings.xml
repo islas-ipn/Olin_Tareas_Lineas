@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="user_developer">rauFlores</string>
+    <string name="password_developer">Rulo.0831</string>
+
+
+    <string name="app_name">Olin Tareas</string>
+    <string name="company_name">Pendulum Associates</string>
+    <string name="access_control">Control de acceso</string>
+
+    <!-- dialog seguro -->
+    <string name="shared_name">IPs</string>
+
+    <string name="loading">Cargando . . .</string>
+    <string name="yes">Aceptar</string>
+    <string name="no">Cancelar</string>
+    <string name="content_description" />
+    <string name="mensaje_ubicuo">La aplicación OLIN TAREAS requiere que la aplicación Ubicuo este instalada en su teléfono.   Favor de descargarla e instalarla en este dispositivo.</string>
+    <string name="play_store">Descargue desde "Play Store"</string>
+    <string name="tareas_version_error">La versión instalada de Olin Tareas no es la más actualizada, para continuar es necesario instalar la ultima versión.</string>
+    <string name="ubicuo_version_error">La versión instalada de Ubicuo no es la más actualizada, para continuar es necesario instalar la ultima versión.</string>
+    <string name="server">PENDULUM</string>
+    <string name="url_play_Store">https://play.google.com/store/apps/details?id=</string>
+    <string name="package_play_Store">com.android.vending</string>
+    <string name="msg_ubicuo_obsolet">Por favor actualice Ubicuo</string>
+    <string name="mensaje_download_file" tools:ignore="Typos">El documento se decargará en un momento.\n\n\n Download&#8230;</string>
+    <string name="dialog_file_manager">"Se requiere que descargue la aplicación File manager, la cual le permitira visualizar los documentos que descargue de LW."</string>
+    <string name="error_version_obsolete">"Versión incorrecta, por favor instale la última versión de esta aplicación."</string>
+    <string name="error_no_sdcard">Por favor inserte una tarjeta de memoria SD.</string>
+    <string name="error_empty_form">Por favor llene todos los campos del formulario.</string>
+    <string name="error_http">Error HTTP: </string>
+    <string name="error_no_conected_wlan">Por favor verifique su conexión a internet y vuelva a intentarlo.</string>
+    <string name="error_wrong_data">El servidor devolvio información incorrecta.</string>
+    <string name="error_serverconect_error">No se puede conectar con el servidor. Intentenlo mas tarde.</string>
+    <string name="error_server_notfound">El servidor no pudo obtener la información solicitada.</string>
+    <string name="error_wrong_request">La solicitud al servidor es incorrecta.</string>
+    <string name="error">Error</string>
+    <string name="synchronizing_data">Sincronizando datos . . .</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="error_no_wifi">Por favor conecte su dispositivo a una red WiFi.</string>
+    <string name="version">Versión</string>
+    <string name="empty" />
+    <string name="upload_complete">Fin de envío.</string>
+    <string name="info_ips">Dirección IP</string>
+    <string name="info_amb">Ambiente</string>
+    <string name="development">Desarrollo</string>
+    <string name="releaseapk">Productivo</string>
+
+    <string name="download_complete">Descarga completa.</string>
+    <string name="error_resource">Error obteniendo recurso.</string>
+    <string name="error_download_incomplete">Error en la descarga.</string>
+    <string name="error_upload_incomplete">Error en el envío.</string>
+    <string name="error_missing_photo">Error ubicando archivo, por favor capture otra fotografía.</string>
+    <string name="error_200"> No se insertó en el servidor</string>
+    <string name="error_http_server">No se pudo establecer comunicación con el servidor. Por favor verifique su conexión a internet. </string>
+    <string name="date_login">Fecha Login</string>
+
+    <string name="unknown_account">no se encuentra asignado a la cartera del usuario, aun así desea agregar la tarea?</string>
+    <string name="tareas_db_null">Para utilizar Tareas es necesario realizar LogIn en la Aplición de Tareas.</string>
+
+    <!-- Buttons -->
+    <string name="send">Enviar</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Login -->
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="passwordshow">Ver contrseña</string>
+    <string name="authenticating_credentials">Validando credenciales del usuario.</string>
+    <string name="error_user_data">Datos de usuario inválidos.</string>
+    <string name="error_user_logout">Error al realizar LogOut en Tareas.</string>
+    <string name="error_database">Error de base de datos local.</string>
+    <string name="error_user_blocked">Acceso denegado al usuario.</string>
+    <string name="error_auth_credentials">Usuario o clave incorrectos.</string>
+    <!-- Logout Dialog -->
+    <string name="dlg_logout_title">Confirmación</string>
+    <string name="dlg_logout_text">¿Deseas enviar los datos?</string>
+    <string name="dlg_logout_ok">Si</string>
+    <string name="dlg_logout_cancel">No</string>
+    <!-- Tareas-->
+    <string name="id">ID:</string>
+    <string name="tsk_Responsable">Responsable:</string>
+    <string name="tsk_De">Negocio:</string>
+    <string name="tsk_Fecha_inicio">Fecha original:</string>
+    <string name="tsk_Estado">Estado:</string>
+    <string name="tsk_Solicitante">Solicitante:</string>
+    <string name="tsk_Actividad">Actividad:</string>
+    <string name="tsk_Credito">Credito:</string>
+    <string name="tsk_acreditado">Acreditado:</string>
+    <string name="tsk_Asunto">Asunto:</string>
+    <string name="tsk_SubAsunto">Sub Asunto:</string>
+    <string name="tsk_Fecha_compromiso">Fecha compromiso:</string>
+    <string name="tsk_descripci_n">Descripción</string>
+    <string name="preguntas">  &lt;b>   %1$s &lt;/b>  %2$s %3$s. </string>
+    <string name="menu_search">Buscar</string>
+    <string name="tsk_en_d_nde_ser_la_cita">En dónde será la cita?</string>
+    <string name="tsk_hora_de_inicio">Hora de inicio</string>
+    <string name="tsk_hora_fin">Hora fin</string>
+    <string name="tsk_fecha_compromiso_original">Fecha compromiso original</string>
+    <string name="tsk_prioridad">Prioridad</string>
+    <string name="tsk_asunto">Asunto</string>
+    <string name="tsk_sub_asunto">Sub Asunto</string>
+    <string name="tsk_negocio">Negocio</string>
+    <string name="tsk_actividad">Actividad</string>
+    <string name="tsk_responsable">Responsable</string>
+    <string name="tsk_cr_dito">Crédito</string>
+    <string name="tsk_estado">Estado</string>
+    <string name="tsk_fecha_compromiso_actual">Fecha compromiso actual</string>
+    <string name="tsk_comando_accion" tools:ignore="Typos">Comando acción</string>
+    <string name="tsk_comando_resultado" tools:ignore="Typos">Comando resultado</string>
+    <string name="tsk_asignar">Asignar</string>
+    <string name="selecione">Selecciona una opción.</string>
+    <string name="_zero">0</string>
+
+    <string name="address_state">Estado de Domicilio</string>
+    <string name="address_city">Ciudad de Domicilio</string>
+    <string name="address_mun">Municipio de Domicilio</string>
+    <string name="address_colony">Fracc. / Colonia / Rancheria / Etc.</string>
+    <string name="address_accept">Aceptar</string>
+    <string name="address_cp">Buscar por Código Postal</string>
+    <string name="address_cancel">Cancelar</string>
+
+    <string name="ubicuo_needed">UBICUO No Instalado</string>
+
+    <string name="url_market_prefix">market://details?id=</string>
+    <string name="tareas_pendientes"># Tareas Pendientes</string>
+    <string name="msg_pendulum_without_account">!Hola asociado¡\\nA continuación se mostra una lista con las cuentas de correo de google, por favor seleciona la cuenta de pendulum, en caso de que no estar en la lista por favor agrega la cuenta empresarial al dispositivo</string>
+
+
+</resources>

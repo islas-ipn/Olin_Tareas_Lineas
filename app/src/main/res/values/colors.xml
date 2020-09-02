@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- https://www.materialpalette.com/light-blue/blue -->
+    <color name="primary">@color/color_800</color> <!--ColorPrimary  se ocupa para el color del actionbar -->
+    <color name="primary_dark">@color/color_700</color> <!--ColorPrimaryDark se ocupa para la barra de estado(notification bar)-->
+    <color name="primary_light">@color/color_100</color>
+    <color name="accent">#448AFF</color><!--ColorAccent -->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+
+    <color name="DarkGray">#626262</color>
+    <color name="shadow">#CABBBBBB</color>
+    <color name="LightGray">#eeeeee</color>
+
+    <color name="Red">#ff0000</color>
+    <color name="Yellow">#ffd700</color>
+    <color name="Green">#008000</color>
+    <color name="warning">#ed8b00</color>
+    <color name="error">#30ff0000</color>
+    <color name="parcial">#30ffd700</color>
+
+
+    <!-- Light Blue  #03A9F4  color_500 Google pallete-->
+    <color name="color_50">#7CE3F2FD</color>
+    <color name="color_100">#BBDEFB</color>
+    <color name="color_200">#90CAF9</color>
+    <color name="color_300">#64B5F6</color>
+    <color name="color_400">#42A5F5</color>
+    <color name="color_500">#2196F3</color>
+    <color name="color_600">#1E88E5</color>
+    <color name="color_700">#1976D2</color>
+    <color name="color_800">#1565C0</color>
+    <color name="color_900">#0D47A1</color>
+    <color name="color_A100">#82B1FF</color>
+    <color name="color_A200">#448AFF</color>
+    <color name="color_A400">#2979FF</color>
+    <color name="color_A700">#2962FF</color>
+
+    <color name="today_border">#e4e4e4</color>
+    <color name="today_background">#f7f7f7</color>
+    <color name="colorPrimary">#0081c3</color>
+    <color name="secundaryTextColor">#757575</color>
+    <color name="primaryTextColor">#4d4d4d</color>
+    <color name="colorHover">#30818181</color>
+
+
+    <!-- Tareas V2 -->
+    <!--Estatus Tarea - Colores-->
+
+    <color name="tsk_cerrada">#29b6f6</color>
+    <color name="tsk_incorrecto">#ffa726</color>
+    <color name="tsk_correcto">#66bb6a</color>
+    <color name="tsk_tiempo">#fffb2a</color>
+    <color name="tsk_vencida">#ef5350</color>
+    <color name="tsk_olin">@color/error</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row"
+    style="@style/DynamicFormAnswerContainerText"
+    android:layout_height="wrap_content"
+    android:background="@color/color_200"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:visibility="invisible"
+            android:src="@drawable/label_task"
+            android:tint="@color/color_900" />
+
+    </FrameLayout>
+
+    <mx.com.pendulum.utilities.views.CustomTextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_toEndOf="@+id/line"
+        android:layout_toRightOf="@+id/line"
+        android:text="Aqui va la pregunta"
+        android:textColor="@color/color_900"
+        android:textSize="20sp"
+        app:typeFace="@string/font_bold" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/tvQuestion"
+        android:layout_toRightOf="@id/tvQuestion"
+        android:background="@color/color_900"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+
+

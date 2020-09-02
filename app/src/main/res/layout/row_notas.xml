@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/flFromPencel"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@color/error" />
+
+        <FrameLayout
+            android:id="@+id/flParcialSave"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/parcial_task" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10.5">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.25"
+                android:gravity="end|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID"
+                    android:textColor="@color/primary_text" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.25"
+                android:gravity="start|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    app:typeFace="@string/font_bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10.5">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.25"
+                android:gravity="end|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha seguimiento"
+                    android:textColor="@color/primary_text" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.25"
+                android:gravity="start|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvFechaSeguimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    app:typeFace="@string/font_bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10.5">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.25"
+                android:gravity="end|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado"
+                    android:textColor="@color/primary_text" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.25"
+                android:gravity="start|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    app:typeFace="@string/font_bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10.5">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.25"
+                android:gravity="end|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:text="Usuario seguimiento "
+                    android:textColor="@color/primary_text" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.25"
+                android:gravity="start|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvUsuarioSeguimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    app:typeFace="@string/font_bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/respContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10.5">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.25"
+                android:gravity="end|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:text="Comentario"
+                    android:textColor="@color/primary_text" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.25"
+                android:gravity="start|center_vertical">
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvComentario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:textColor="@color/primary_text"
+                    app:typeFace="@string/font_bold" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

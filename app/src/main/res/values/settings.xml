@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="verion_cat_actual">2</integer>
+    <integer name="verion_user_actual">2</integer>
+
+    <string name="font">fonts/MuseoSans_100.otf</string>
+    <string name="font_bold">fonts/MuseoSans_300.otf</string>
+    <string name="font_italic">fonts//MuseoSans_100Italic.otf</string>
+
+    <string name="alphanumeric">^[-_ a-zA-Z0-9]*$</string>
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OlinDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/infoCompanyNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_background"
+        android:gravity="center"
+        android:text="@string/company_name"
+        android:textColor="@color/White"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoCompanyNameTextView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/infoHeaderUsernameTextView"
+            style="@style/NameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/username"
+            android:textColor="@color/DarkGray"
+            android:textSize="@dimen/text_medium" />
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:id="@+id/infoUsernameTextView"
+            style="@style/ValueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/empty"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/infoHeaderLoginDateTextView"
+            style="@style/NameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/date_login"
+            android:textColor="@color/DarkGray"
+            android:textSize="@dimen/text_medium" />
+
+        <ImageView
+            android:id="@+id/ImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:id="@+id/infoLoginDateTextView"
+            style="@style/ValueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/empty"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/infoHeaderVersionTextView"
+            style="@style/NameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/version"
+            android:textColor="@color/DarkGray"
+            android:textSize="@dimen/text_medium" />
+
+        <ImageView
+            android:id="@+id/ImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:id="@+id/infoVersionTextView"
+            style="@style/ValueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/empty"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/infDireccion"
+            style="@style/NameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/info_ips"
+            android:textColor="@color/DarkGray"
+            android:textSize="@dimen/text_medium" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:id="@+id/infoVersionIP"
+            style="@style/ValueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/empty"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/infHambiente"
+            style="@style/NameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/info_amb"
+            android:textColor="@color/DarkGray"
+            android:textSize="@dimen/text_medium" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:id="@+id/infoEnvironmentTextView"
+            style="@style/ValueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/empty"
+            android:textColor="@color/Green"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDismiss"
+        style="@style/OlinButton"
+        android:layout_below="@+id/llContainer"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ok" />
+
+</RelativeLayout>

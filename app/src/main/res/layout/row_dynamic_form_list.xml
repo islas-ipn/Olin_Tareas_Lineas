@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    style="@style/DynamicFormRow">
+
+    <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+        <FrameLayout
+            android:id="@+id/flError"
+            style="@style/DynamicFormError" />
+
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvQuestion"
+
+            style="@style/DynamicFormQuestion" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        style="@style/DynamicFormAnswerContainer"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:id="@+id/moreQuestionsContainer"
+            style="@style/DynamicFormAnswerContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/moreQuestions"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/content_description"
+                android:minHeight="40dp"
+                android:src="@drawable/more_questions"
+                android:tint="@color/secondary_text" />
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlAnswer"
+            style="@style/DynamicFormAnswerContainer">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_menu_cancel" />
+
+            <mx.com.pendulum.utilities.views.CustomTextView
+                android:id="@+id/tvAnswer"
+                style="@style/DynamicFormAnswer"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/ivDelete" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

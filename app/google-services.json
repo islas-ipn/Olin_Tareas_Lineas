@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44447823081",
+    "firebase_url": "https://olin-tareas.firebaseio.com",
+    "project_id": "olin-tareas",
+    "storage_bucket": "olin-tareas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44447823081:android:1ac3c69314d418e9262c78",
+        "android_client_info": {
+          "package_name": "mx.com.pendulum.olintareas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44447823081-9jrd7tc1lr62las35lskqj04267e91pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdCbCI_-DzxZVyx0UAZ8FFY7XgiveGC20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44447823081-9jrd7tc1lr62las35lskqj04267e91pt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

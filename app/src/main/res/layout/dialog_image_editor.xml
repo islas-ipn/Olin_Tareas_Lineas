@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/White"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:windowActionBar="false">
+
+    <Space
+        android:layout_width="@dimen/space"
+        android:layout_height="@dimen/space" />
+
+    <mx.com.pendulum.utilities.views.CustomTextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:gravity="start"
+        android:text="Por favor edite la imagen"
+        android:textColor="@color/accent"
+        android:textSize="18sp"
+        app:typeFace="@string/font_bold" />
+
+    <Space
+        android:layout_width="@dimen/space"
+        android:layout_height="@dimen/space" />
+
+    <ImageView
+        android:id="@+id/cropIv"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:contentDescription="@string/content_description"
+        android:layout_margin="@dimen/space"
+        android:scaleType="fitCenter" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <ImageButton
+            android:id="@+id/menu_turn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_enviar"
+            android:contentDescription="@string/content_description"
+            android:padding="5dp"
+            android:src="@mipmap/ic_menu_turn_left"
+            android:tint="@color/Black" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <ImageButton
+            android:id="@+id/menu_turn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_enviar"
+            android:contentDescription="@string/content_description"
+            android:padding="5dp"
+            android:src="@mipmap/ic_menu_turn_right"
+            android:tint="@color/Black" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <ImageButton
+            android:id="@+id/tvDialogNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_enviar"
+            android:contentDescription="@string/content_description"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu_cancel"
+            android:tint="@color/Black" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <ImageButton
+            android:id="@+id/tvDialogYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_enviar"
+            android:contentDescription="@string/content_description"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu_ok"
+            android:tint="@color/Black" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

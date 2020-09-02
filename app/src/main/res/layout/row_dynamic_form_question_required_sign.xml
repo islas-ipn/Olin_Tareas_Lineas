@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowRequiredQuestionDocument"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rvQuestionDocumentAnwser"
+        style="@style/DynamicFormAnswerContainer">
+
+
+        <ImageView
+            android:id="@+id/ivQuestionDocumentDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_cancel" />
+
+        <FrameLayout
+            android:id="@+id/flQuestionDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true">
+
+
+            <RelativeLayout
+                android:id="@+id/addedQuestionDocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/tvQuestionDocumentExtension"
+                    android:layout_width="26dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:ellipsize="middle"
+                    android:maxLines="2"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/Black"
+                    android:textSize="7sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/addQuestionDocument"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dynamic_file_add"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvQuestionDocumentAnswer"
+            style="@style/DynamicFormAnswer"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ivQuestionDocumentDelete"
+            android:layout_toEndOf="@+id/flQuestionDocument"
+            android:layout_toRightOf="@+id/flQuestionDocument" />
+
+        <ImageView
+            android:id="@+id/ivImageCaptured"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:scaleType="fitCenter" />
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvQuestionDocumentAnswerSelected"
+            style="@style/DynamicFormAnswer"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ivImageCaptured" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--DESCRIPCION -->
+    <LinearLayout
+        android:id="@+id/containerDescipcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+            <FrameLayout
+                android:id="@+id/flDescipcionError"
+                style="@style/DynamicFormError"
+                android:visibility="gone" />
+
+            <mx.com.pendulum.utilities.views.CustomTextView
+                android:id="@+id/tvDescipcionQuestion"
+                style="@style/DynamicFormQuestion"
+                android:text="@string/tsk_descripci_n"
+                app:typeFace="@string/font_bold" />
+        </FrameLayout>
+
+
+        <RelativeLayout style="@style/DynamicFormAnswerContainerText">
+
+            <ImageView
+                android:id="@+id/ivDescipcionDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etDescipcionAnswer"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_menu_cancel" />
+
+            <mx.com.pendulum.utilities.views.CustomEditText
+                android:id="@+id/etDescipcionAnswer"
+                style="@style/DynamicFormAnswer"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/ivDescipcionDelete"
+                android:layout_toStartOf="@+id/ivDescipcionDelete"
+                android:maxLength="4000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

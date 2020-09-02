@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1000762507443",
+    "firebase_url": "https://pendulum-com-mx-api-project-1000762507443.firebaseio.com",
+    "project_id": "pendulum.com.mx:api-project-1000762507443",
+    "storage_bucket": "pendulum.com.mx:api-project-1000762507443.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000762507443:android:829773d51d1e501b",
+        "android_client_info": {
+          "package_name": "mx.com.pendulum.olintareas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000762507443-6rj6d8bjentcrh70ub2dfkahlhv4n7sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFsWZYC8Uawg_rEzzvGVZWG5_uF2vlzio"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

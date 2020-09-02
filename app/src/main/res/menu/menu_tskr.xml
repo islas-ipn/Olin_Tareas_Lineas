@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tsk_week"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Tareas de la semana" />
+    <item
+        android:id="@+id/tsk_day"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Tareas de hoy" />
+    <item
+        android:id="@+id/tsk_pending"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="Pendientes" />
+
+    <item
+        android:id="@+id/tsk_all"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="Todas las tareas" />
+
+    <item
+        android:id="@+id/tsk_date"
+        android:icon="@android:drawable/ic_menu_month"
+        android:title="Por fecha" />
+
+    <item
+        android:id="@+id/tsk_close"
+        android:icon="@android:drawable/ic_menu_month"
+        android:title="Tareas cerradas" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_menu_search"
+        android:orderInCategory="1"
+        android:title="@string/menu_search"
+        app:showAsAction="always|withText|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+</menu>

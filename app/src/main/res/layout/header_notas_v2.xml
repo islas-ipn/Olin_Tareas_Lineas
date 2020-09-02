@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ESTADO     FECHA compromiso actual-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!-- ESTADO -->
+
+
+        <LinearLayout
+            android:id="@+id/containerEstado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+                <FrameLayout
+                    android:id="@+id/flEstadoError"
+                    style="@style/DynamicFormError"
+                    android:visibility="gone" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvEstadoQuestion"
+                    style="@style/DynamicFormQuestion"
+                    android:text="@string/tsk_estado"
+                    app:typeFace="@string/font_bold" />
+            </FrameLayout>
+
+
+            <RelativeLayout style="@style/DynamicFormAnswerContainer">
+
+
+                <Spinner
+                    android:id="@+id/spEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- FECHA compromiso actual -->
+        <LinearLayout
+            android:id="@+id/containerFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+                <FrameLayout
+                    android:id="@+id/flFechaFinError"
+                    style="@style/DynamicFormError"
+                    android:visibility="gone" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvFechaFinQuestion"
+                    style="@style/DynamicFormQuestion"
+                    android:text="@string/tsk_fecha_compromiso_actual"
+                    app:typeFace="@string/font_bold" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlFechaFin"
+                style="@style/DynamicFormAnswerContainer">
+
+
+                <ImageView
+                    android:id="@+id/ivFechaFinDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_menu_cancel" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/etFechaFinAnswer"
+                    style="@style/DynamicFormAnswer"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@+id/ivFechaFinDelete"
+                    android:layout_toLeftOf="@+id/ivFechaFinDelete" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- COMANDO ACCION -->  <!-- COMANDO RESULTADO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!-- COMANDO ACCION -->
+        <LinearLayout
+            android:id="@+id/containerCodAccion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+                <FrameLayout
+                    android:id="@+id/flCodAccionError"
+                    style="@style/DynamicFormError"
+                    android:visibility="gone" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvCodAccionQuestion"
+                    style="@style/DynamicFormQuestion"
+                    android:text="@string/tsk_comando_accion"
+                    app:typeFace="@string/font_bold" />
+            </FrameLayout>
+
+
+            <RelativeLayout style="@style/DynamicFormAnswerContainer">
+
+
+                <Spinner
+                    android:id="@+id/spCodAccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- COMANDO RESULTADO  -->
+        <LinearLayout
+            android:id="@+id/containerCodResultado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+                <FrameLayout
+                    android:id="@+id/flCodResultadoError"
+                    style="@style/DynamicFormError"
+                    android:visibility="gone" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvCodResultadoQuestion"
+                    style="@style/DynamicFormQuestion"
+                    android:text="@string/tsk_comando_resultado"
+                    app:typeFace="@string/font_bold" />
+            </FrameLayout>
+
+
+            <RelativeLayout style="@style/DynamicFormAnswerContainer">
+
+
+                <Spinner
+                    android:id="@+id/spCodResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- HORAS -->
+    <LinearLayout
+        android:id="@+id/containerHoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+                <FrameLayout
+                    android:id="@+id/flHoraInicioError"
+                    style="@style/DynamicFormError"
+                    android:visibility="gone" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvHoraInicioQuestion"
+                    style="@style/DynamicFormQuestion"
+                    android:text="@string/tsk_hora_de_inicio"
+                    app:typeFace="@string/font_bold" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlHoraInicio"
+                style="@style/DynamicFormAnswerContainer">
+
+
+                <ImageView
+                    android:id="@+id/ivHoraInicioDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_menu_cancel" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/etHoraInicioAnswer"
+                    style="@style/DynamicFormAnswer"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@+id/ivHoraInicioDelete"
+                    android:layout_toLeftOf="@+id/ivHoraInicioDelete" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+                <FrameLayout
+                    android:id="@+id/flHoraFinError"
+                    style="@style/DynamicFormError"
+                    android:visibility="gone" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/tvHoraFinQuestion"
+                    style="@style/DynamicFormQuestion"
+                    android:text="@string/tsk_hora_fin"
+                    app:typeFace="@string/font_bold" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlHoraFin"
+                style="@style/DynamicFormAnswerContainer">
+
+
+                <ImageView
+                    android:id="@+id/ivHoraFinDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_menu_cancel" />
+
+                <mx.com.pendulum.utilities.views.CustomTextView
+                    android:id="@+id/etHoraFinAnswer"
+                    style="@style/DynamicFormAnswer"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@+id/ivHoraFinDelete"
+                    android:layout_toLeftOf="@+id/ivHoraFinDelete" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--asignado a -->
+    <LinearLayout
+        android:id="@+id/containerAsignar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout style="@style/DynamicFormQuestionContainer">
+
+            <FrameLayout
+                android:id="@+id/flAsignarError"
+                style="@style/DynamicFormError"
+                android:visibility="gone" />
+
+            <mx.com.pendulum.utilities.views.CustomTextView
+                android:id="@+id/tvAsignarQuestion"
+                style="@style/DynamicFormQuestion"
+                android:text="@string/tsk_asignar"
+                app:typeFace="@string/font_bold" />
+        </FrameLayout>
+
+
+        <RelativeLayout style="@style/DynamicFormAnswerContainerText">
+
+            <ImageView
+                android:id="@+id/ivAsignarDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etAsignarAnswer"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_menu_cancel" />
+
+            <mx.com.pendulum.utilities.views.CustomAutoCompleteTextView
+                android:id="@+id/etAsignarAnswer"
+                style="@style/DynamicFormAnswer"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/ivAsignarDelete"
+                android:layout_toLeftOf="@+id/ivAsignarDelete"
+                android:completionThreshold="1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--DESCRIPCION -->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/containerDescipcion"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<FrameLayout style="@style/DynamicFormQuestionContainer">-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/flDescipcionError"-->
+    <!--style="@style/DynamicFormError"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<mx.com.pendulum.utilities.views.CustomTextView-->
+    <!--android:id="@+id/tvDescipcionQuestion"-->
+    <!--style="@style/DynamicFormQuestion"-->
+    <!--android:text="@string/tsk_descripci_n"-->
+    <!--app:typeFace="@string/font_bold" />-->
+    <!--</FrameLayout>-->
+
+
+    <!--<RelativeLayout style="@style/DynamicFormAnswerContainerText">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ivDescipcionDelete"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/etDescipcionAnswer"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@mipmap/ic_menu_cancel" />-->
+
+    <!--<mx.com.pendulum.utilities.views.CustomEditText-->
+    <!--android:id="@+id/etDescipcionAnswer"-->
+    <!--style="@style/DynamicFormAnswer"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_toLeftOf="@+id/ivDescipcionDelete"-->
+    <!--android:layout_toStartOf="@+id/ivDescipcionDelete"-->
+    <!--android:maxLength="4000" />-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<FrameLayout style="@style/DynamicFormQuestionContainer">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/DynamicFormError"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:visibility="gone" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<mx.com.pendulum.utilities.views.CustomTextView&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/DynamicFormQuestion"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="pregunta"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:typeFace="@string/font_bold" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<RelativeLayout style="@style/DynamicFormAnswerContainer">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<Spinner&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/fake"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

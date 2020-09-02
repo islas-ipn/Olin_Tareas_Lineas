@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/OlinDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/margin_small"
+    android:minHeight="40dp"
+    android:minWidth="250dp"
+    android:padding="@dimen/padding_medium"
+    tools:ignore="RtlHardcoded">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/dlgProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle" />
+
+        <TextView
+            android:id="@+id/dlgProgressDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:gravity="center_vertical"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/dlgProgressBar2"
+        style="@drawable/progress_horizontal_olin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:maxHeight="16dp"
+        android:maxWidth="16dp"
+        android:minHeight="14dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_horizontal_olin"
+        android:textColor="@color/Black"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dlgProgressBar2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/Black"
+            android:textSize="16sp"
+            android:typeface="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

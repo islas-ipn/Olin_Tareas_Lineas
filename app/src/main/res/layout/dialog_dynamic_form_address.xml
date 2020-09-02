@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:gravity="fill_vertical"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flErrorState"
+                style="@style/DynamicFormError"
+                android:visibility="gone" />
+
+
+            <mx.com.pendulum.utilities.views.CustomTextView
+                android:id="@+id/tvState"
+                style="@style/DynamicFormQuestion"
+                android:text="@string/address_state"
+                android:textSize="@dimen/text_medium" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAnswerState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_bg_dynamic"
+            android:minHeight="40dp">
+
+            <ImageView
+                android:id="@+id/ivDeleteState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_menu_cancel" />
+
+            <mx.com.pendulum.utilities.views.CustomSpinnerView
+                android:id="@+id/spState"
+                style="@style/DynamicFormAnswer"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/ivDeleteState" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flErrorMuni"
+                style="@style/DynamicFormError"
+                android:visibility="gone" />
+
+
+            <mx.com.pendulum.utilities.views.CustomTextView
+                android:id="@+id/tvMuni"
+                style="@style/DynamicFormQuestion"
+                android:text="@string/address_mun"
+                android:textSize="@dimen/text_medium" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAnswerMuni"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_bg_dynamic"
+            android:minHeight="40dp">
+
+            <ImageView
+                android:id="@+id/ivDeleteMuni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_menu_cancel" />
+
+            <mx.com.pendulum.utilities.views.CustomSpinnerView
+                android:id="@+id/spMuni"
+                style="@style/DynamicFormAnswer"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/ivDeleteMuni" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flErrorColony"
+                style="@style/DynamicFormError"
+                android:visibility="gone" />
+
+
+            <mx.com.pendulum.utilities.views.CustomTextView
+                android:id="@+id/tvColony"
+                style="@style/DynamicFormQuestion"
+                android:text="@string/address_colony"
+                android:textSize="@dimen/text_medium" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlAnswerColony"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_bg_dynamic"
+            android:minHeight="40dp">
+
+            <ImageView
+                android:id="@+id/ivDeleteColony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_menu_cancel" />
+
+            <mx.com.pendulum.utilities.views.CustomSpinnerView
+                android:id="@+id/spColony"
+                style="@style/DynamicFormAnswer"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/ivDeleteColony" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flErrorCp"
+                style="@style/DynamicFormError"
+                android:visibility="gone" />
+
+
+            <mx.com.pendulum.utilities.views.CustomTextView
+                android:id="@+id/tvCp"
+                style="@style/DynamicFormQuestion"
+                android:text="@string/address_cp"
+                android:textSize="@dimen/text_medium" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_bg_dynamic"
+            android:minHeight="40dp">
+
+            <ImageView
+                android:id="@+id/ivDeleteCp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivSearchCp"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/ic_menu_cancel" />
+
+            <mx.com.pendulum.utilities.views.CustomEditText
+                android:id="@+id/edtCp"
+                style="@style/DynamicFormAnswer"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/ivDeleteCp" />
+
+            <ImageView
+                android:id="@+id/ivSearchCp"
+                style="@style/DynamicImageViewQuestion"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/layout_bg_blue"
+                android:contentDescription="@string/content_description"
+                android:src="@mipmap/ic_search" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space"
+            android:layout_marginBottom="32dp"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/OlinButton"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight=".5"
+                android:paddingTop="@dimen/padding_medium"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                style="@style/OlinButton"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_weight=".5"
+                android:paddingTop="@dimen/padding_medium"
+                android:text="@string/ok" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

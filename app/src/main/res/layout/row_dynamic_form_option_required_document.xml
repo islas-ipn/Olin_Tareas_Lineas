@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowRequiredOptionDocument"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rvOptionDocumentAnwser"
+        style="@style/DynamicFormAnswerContainer">
+
+
+        <ImageView
+            android:id="@+id/ivOptionDocumentDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu_cancel" />
+
+        <FrameLayout
+            android:id="@+id/flOptionDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+
+            <RelativeLayout
+                android:id="@+id/addedOptionDocument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/dynamic_file" />
+
+                <TextView
+                    android:id="@+id/tvOptionDocumentExtension"
+                    android:layout_width="26dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:ellipsize="middle"
+                    android:maxLines="2"
+                    android:paddingTop="6dp"
+                    android:textColor="@color/Black"
+                    android:textSize="7sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/addOptionDocument"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dynamic_file_add"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <mx.com.pendulum.utilities.views.CustomTextView
+            android:id="@+id/tvOptionDocumentAnswer"
+            style="@style/DynamicFormAnswer"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/flOptionDocument"
+            android:layout_toLeftOf="@id/ivDelete"
+            android:layout_toRightOf="@+id/flOptionDocument"
+            android:layout_toStartOf="@+id/ivOptionDocumentDelete" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

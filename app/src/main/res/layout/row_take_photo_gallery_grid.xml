@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="170dp"
+    android:layout_height="170dp">
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressBar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:visibility="gone" />-->
+
+
+    <ImageView
+        android:id="@+id/rowIv"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/content_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/page" />
+
+    <ImageView
+        android:id="@+id/rowDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:contentDescription="@string/content_description"
+        android:background="#57ffffff"
+        android:src="@android:drawable/ic_menu_delete"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/rowMaximize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#57ffffff"
+        android:contentDescription="@string/content_description"
+        android:src="@android:drawable/ic_menu_zoom" />
+
+    <LinearLayout
+        android:id="@+id/rowGalleryll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/rowGalleryTurnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#57ffffff"
+            android:contentDescription="@string/content_description"
+            android:padding="10dp"
+            android:src="@mipmap/ic_menu_turn_left" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="10dp" />
+
+        <ImageButton
+            android:id="@+id/rowGalleryTurnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#57ffffff"
+            android:contentDescription="@string/content_description"
+            android:padding="10dp"
+            android:src="@mipmap/ic_menu_turn_right" />
+    </LinearLayout>
+
+
+</RelativeLayout>
